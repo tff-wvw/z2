@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double Q, k, p, x, d;
+
+            Console.WriteLine("введите значение переменной k");
+            k=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной p");
+            p=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной x");
+            x=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной d");
+            d=Convert.ToDouble(Console.ReadLine());
+
+            Q = Math.Sqrt(k + 2.6 * p + Math.Sin(k)) / x - Math.Pow(d, 3);
+
+            Console.WriteLine($"значение переменной Q={Q}");
+            Console.ReadKey();
+        }
+    }
+}
