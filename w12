@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp12
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double R, t, y;
+
+            Console.WriteLine("введите значение переменной t");
+            t=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите знчение переменной y");
+            y=Convert.ToDouble(Console.ReadLine());
+
+            R = Math.Sin(Math.Pow((2 * t + 1), 2)) + 0.3 / Math.Log10(t + y);
+
+            Console.WriteLine($"значение переменной R={R}");
+            Console.ReadKey();
+        }
+    }
+}
