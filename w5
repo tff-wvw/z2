@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double D, a, t, y;
+
+            Console.WriteLine("введите значение переменной a");
+            a=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной t");
+            t=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной y");
+            y=Convert.ToDouble(Console.ReadLine());
+
+            D = 7.8 * Math.Pow(a, 2) + 3.52 * t / Math.Log10(a + 2 * y) + Math.Exp(y);
+
+            Console.WriteLine($"значение переменной D={D}");
+            Console.ReadKey();
+        }
+    }
+}
