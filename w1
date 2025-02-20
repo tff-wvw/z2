@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double G, y, f;
+
+            Console.WriteLine("введите значение переменной y");
+            y=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной f");
+            f=Convert.ToDouble(Console.ReadLine());
+
+            G = Math.Exp(2*y) + Math.Sin(f) / Math.Log10(3.8 * y + f);
+
+            Console.WriteLine($"значение переменной G={G}");
+            Console.ReadKey();
+        }
+    }
+}
