@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double U, k, y;
+
+            Console.WriteLine("введите значение переменной k");
+            k=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной y");
+            y=Convert.ToDouble(Console.ReadLine());
+
+            U = Math.Log10(k - y) + Math.Pow(y, 4) / Math.Exp(y) + 2.355 * Math.Pow(k, 2);
+
+            Console.WriteLine($"значение переменной U={U}");
+            Console.ReadKey();
+        }
+    }
+}
