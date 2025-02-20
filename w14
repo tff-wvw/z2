@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp14
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double P, y, h;
+
+            Console.WriteLine("введите значение переменной y");
+            y=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной h");
+            h=Convert.ToDouble(Console.ReadLine());
+
+            P = Math.Exp(y + 2.5) + 7.1 * Math.Pow(h, 3) / Math.Log10(Math.Sqrt(y + 0.04 * h));
+
+            Console.WriteLine($"значение переменной P={P}");
+            Console.ReadKey();
+        }
+    }
+}
