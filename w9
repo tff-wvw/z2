@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp9
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double V, y, w;
+
+            Console.WriteLine("введите значение переменной y");
+            y=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной w");
+            w=Convert.ToDouble(Console.ReadLine());
+
+            V = Math.Pow((y + 2 * w), 3) / Math.Log10(y + 0.75);
+
+            Console.WriteLine($"значение переменной V={V}");
+            Console.ReadKey();
+        }
+    }
+}
