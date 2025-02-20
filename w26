@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double T, u, y;
+
+            Console.WriteLine("введите значение переменной u");
+            u=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной y");
+            y=Convert.ToDouble(Console.ReadLine());
+
+            T = Math.Sin(2 * u) / Math.Log10(2 * y + u);
+
+            Console.WriteLine($"значение переменной T={T}");
+            Console.ReadKey();
+        }
+    }
+}
