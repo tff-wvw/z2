@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp19
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double E, y, q;
+
+            Console.WriteLine("введите значение переменной y");
+            y=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной q");
+            q=Convert.ToDouble(Console.ReadLine());
+
+            E = Math.Log10(0.7 * y + 2 * q) / Math.Sqrt(3 * Math.Pow(y, 2) + 0.5 * y + 4);
+
+            Console.WriteLine($"значение выражения E={E}");
+            Console.ReadKey();
+        }
+    }
+}
