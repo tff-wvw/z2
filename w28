@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double W, v, y;
+
+            Console.WriteLine("введите значение переменной v");
+            v=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение переменной y");
+            y=Convert.ToDouble(Console.ReadLine());
+
+            W = 0.004 * v + Math.Exp(2 * y) / Math.Exp(y / 2);
+
+            Console.WriteLine($"значение переменной W={W}");
+            Console.ReadKey();
+        }
+    }
+}
