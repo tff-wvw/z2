@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp18
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double R, y, k;
+
+            Console.WriteLine("введите значение выражения y");
+            y=Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("введите значение выражения k");
+            k=Convert.ToDouble(Console.ReadLine());
+
+            R = Math.Sqrt(Math.Sin(2) * y + 6.835) / Math.Log10(y + k) + 3 * Math.Pow(y, 2);
+
+            Console.WriteLine($"значение выражения R={R}");
+            Console.ReadKey();
+        }
+    }
+}
